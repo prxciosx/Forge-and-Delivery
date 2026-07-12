@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sou_agua",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.0198413,
+  "exportDir":"",
+  "name":"sou_agua",
+  "parent":{
+    "name":"Sound",
+    "path":"folders/Sound.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sou_agua.mp3",
+  "volume":1.0,
+}

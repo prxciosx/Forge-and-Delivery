@@ -1,0 +1,1 @@
+global.porta = Room1;
