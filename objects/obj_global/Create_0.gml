@@ -4,11 +4,11 @@ global.porta = Room1;
 
 cam = view_camera[0];
 
-cam_w = 192;
-cam_h = 192;
+cam_w = 192*5;
+cam_h = 192*5;
 
-margem_x = 48;
-margem_y = 48;
+margem_x = 48*5;
+margem_y = 48*5;
 
 global.pedido = "";
 global.dinheiro = 0;

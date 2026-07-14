@@ -8,5 +8,5 @@ if (place_meeting(x,y,obj_player) && place_meeting(x,y,obj_arma) && global.pedid
 		}
 	}
 } else{
-	mostrar_texto = true;
+	mostrar_texto = false;
 }

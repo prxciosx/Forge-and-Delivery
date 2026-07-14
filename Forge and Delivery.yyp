@@ -11,7 +11,6 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Font","folderPath":"folders/Font.yy","name":"Font","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objeto","folderPath":"folders/Objeto.yy","name":"Objeto","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Global","folderPath":"folders/Objeto/Global.yy","name":"Global","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"botao","folderPath":"folders/Objeto/Global/botao.yy","name":"botao","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -20,6 +19,7 @@
     {"$GMFolder":"","%Name":"Castelo","folderPath":"folders/Objeto/Instancias/Castelo.yy","name":"Castelo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Utilidade","folderPath":"folders/Objeto/Instancias/Utilidade.yy","name":"Utilidade","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sala","folderPath":"folders/Sala.yy","name":"Sala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprite","folderPath":"folders/Sprite.yy","name":"Sprite","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"background","folderPath":"folders/Sprite/background.yy","name":"background","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"castelos","folderPath":"folders/Sprite/castelos.yy","name":"castelos","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -40,7 +40,6 @@
   "name":"Forge and Delivery",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
-    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},},
     {"id":{"name":"obj_arma","path":"objects/obj_arma/obj_arma.yy",},},
     {"id":{"name":"obj_balde","path":"objects/obj_balde/obj_balde.yy",},},
     {"id":{"name":"obj_bau","path":"objects/obj_bau/obj_bau.yy",},},

@@ -3,8 +3,8 @@ if (place_meeting(x,y,obj_player) && !place_meeting(x,y,obj_porta)&& keyboard_ch
 }
 
 if (carregando){
-	x = obj_player.x + sign(obj_player.image_xscale) * 10;
-	y = obj_player.y - 8;
+	x = obj_player.x + sign(obj_player.image_xscale) * 50;
+	y = obj_player.y - 40;
 }
 
 switch (estado){
