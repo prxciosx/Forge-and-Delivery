@@ -2,20 +2,6 @@ if (instance_exists(obj_player)){
 	
 	show_debug_message(global.pedido);
 	
-	if (global.pontos>3){
-		var indice = irandom_range(1,3);	
-		switch (indice){
-			case 1:
-				obj_arma.estado = "espada"
-			break;
-			case 2:
-				obj_arma.estado = "marreta"
-			break;
-			case 3:
-				obj_arma.estado = "machado"
-			break;
-		}
-		obj_minigame.mostrar = false	}
 	if (instance_exists(obj_minigame)){
 		global.mostrar = obj_minigame.mostrar;
 	} else{
@@ -50,6 +36,17 @@ if (instance_exists(obj_player)){
 
 
 	tempop += delta_time / 1000000;
+	
+	if (global.dialogo && keyboard_check_pressed(vk_enter)) {
+	    tempop = 0;
+
+	    if (i < array_length(text) - 1) {
+	        i++;
+	    } else {
+	        global.dialogo = false;
+	        global.ini = true;
+	    }
+	}
 
 	if (tempop >= tempo){
 	    tempop = 0;
@@ -93,4 +90,25 @@ if (instance_exists(obj_player)){
 	    }
 	}
 	
+	if (instance_exists(obj_arma)){
+		if (!global.forja){
+			pedido = irandom_range(0,3);
+			
+			switch (pedido){
+			    case 0:
+			        global.pedido = "pontudo";
+			    break;
+			    case 1:
+			        global.pedido = "ovni";
+			    break;
+			    case 2:
+			        global.pedido = "ovo";
+			    break;
+			    case 3:
+			        global.pedido = "triangulo";
+			    break;
+			
+		}
+	}
+	}
 }

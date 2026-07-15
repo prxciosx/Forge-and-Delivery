@@ -3,13 +3,14 @@
   "%Name":"obj_botaoe",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_botaoe",
   "overriddenProperties":[],
   "parent":{
     "name":"botao",
-    "path":"folders/Objeto/Global/botao.yy",
+    "path":"folders/Objeto/Hud/botao.yy",
   },
   "parentObjectId":null,
   "persistent":false,

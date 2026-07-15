@@ -68,4 +68,26 @@ if (!global.mostrar){
 	} else{
 		image_index = 0;
 	}
+	
+	if (global.capacidade > 1 && !test){
+		mostrar_texto = true;
+	} else{
+		mostrar_texto = false;
+	}
+	
+	if (keyboard_check_pressed(ord("C")) && array_length(global.mochila) < global.capacidade){
+	    if (global.arma_mao != noone){
+			if (global.arma_mao.estado != "" && global.arma_mao.estadoc == "frio"){
+				test = true;
+				array_push(global.mochila, global.arma_mao.destino);
+
+		        with (global.arma_mao){
+		            instance_destroy();
+		        }
+
+		        global.arma_mao = noone;
+			}
+	    }
+	}
 }
+

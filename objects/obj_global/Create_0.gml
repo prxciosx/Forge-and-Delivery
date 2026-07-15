@@ -36,3 +36,13 @@ global.mos4 = false;
 global.mos5 = false;
 
 global.ini = false;
+
+pedido = noone;
+global.forja = false;
+global.ok = false;
+
+global.capacidade = 1;
+global.preco = 100;
+
+global.mochila = [];
+global.arma_mao = noone;

@@ -9,8 +9,8 @@
   "name":"obj_click",
   "overriddenProperties":[],
   "parent":{
-    "name":"Global",
-    "path":"folders/Objeto/Global.yy",
+    "name":"Hud",
+    "path":"folders/Objeto/Hud.yy",
   },
   "parentObjectId":null,
   "persistent":false,

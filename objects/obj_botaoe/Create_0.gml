@@ -1,0 +1,1 @@
+esperando_impacto = true;

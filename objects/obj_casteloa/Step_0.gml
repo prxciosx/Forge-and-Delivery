@@ -1,12 +1,55 @@
-if (place_meeting(x,y,obj_player) && place_meeting(x,y,obj_arma) && global.pedido == "ovni"){
-	mostrar_texto = true;
-	if (keyboard_check_pressed(ord("X"))){
-		if (global.pedido == "ovni" && obj_arma.estadoc ==  "frio" && obj_arma.image_index != 0 && obj_arma.image_index != 1){
-			global.pedido = "";
-			instance_destroy(obj_arma);
-			global.dinheiro += 100;
-		}
-	}
-} else{
-	mostrar_texto = false;
+if (place_meeting(x, y, obj_player))
+{
+    mostrar_texto = true;
+
+    if (keyboard_check_pressed(ord("X")))
+    {
+        var vendidos = 0;
+        var nova_mochila = [];
+
+        // mochila
+        for (var i = 0; i < array_length(global.mochila); i++)
+        {
+            var item = global.mochila[i];
+
+            if (item == "ovni")
+            {
+                vendidos++;
+            }
+            else
+            {
+                array_push(nova_mochila, item);
+            }
+        }
+
+        global.mochila = nova_mochila;
+
+        // arma na mão
+        if (global.arma_mao != noone)
+        {
+            if (global.arma_mao.destino == "ovni")
+            {
+                vendidos++;
+
+                with (global.arma_mao)
+                {
+                    instance_destroy();
+					global.forja = false;
+                }
+
+                global.arma_mao = noone;
+            }
+        }
+
+        if (vendidos > 0)
+        {
+            global.dinheiro += vendidos * global.preco;
+
+            audio_play_sound(sou_venda, 1, false);
+        }
+    }
+}
+else
+{
+    mostrar_texto = false;
 }

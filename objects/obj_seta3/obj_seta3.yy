@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"setas",
-    "path":"folders/Objeto/Global/setas.yy",
+    "path":"folders/Objeto/Hud/setas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
